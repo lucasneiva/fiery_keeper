@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "125988402100",
+    "project_id": "fiery-keeper",
+    "storage_bucket": "fiery-keeper.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125988402100:android:61cda7432ab8a7b223f8e1",
+        "android_client_info": {
+          "package_name": "com.example.fiery_keeper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqh2zUk7GDEXuwexNyJQGXuBYy38IWdx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
