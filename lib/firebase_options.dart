@@ -2,7 +2,7 @@
 // ignore_for_file: type=lint
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
-    show defaultTargetPlatform, kIsWeb, TargetPlatform;
+		show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -15,74 +15,74 @@ import 'package:flutter/foundation.dart'
 /// );
 /// ```
 class DefaultFirebaseOptions {
-  static FirebaseOptions get currentPlatform {
-    if (kIsWeb) {
-      return web;
-    }
-    switch (defaultTargetPlatform) {
-      case TargetPlatform.android:
-        return android;
-      case TargetPlatform.iOS:
-        return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
-        return windows;
-      case TargetPlatform.linux:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
-      default:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions are not supported for this platform.',
-        );
-    }
-  }
+	static FirebaseOptions get currentPlatform {
+		if (kIsWeb) {
+			return web;
+		}
+		switch (defaultTargetPlatform) {
+			case TargetPlatform.android:
+				return android;
+			case TargetPlatform.iOS:
+				return ios;
+			case TargetPlatform.macOS:
+				return macos;
+			case TargetPlatform.windows:
+				return windows;
+			case TargetPlatform.linux:
+				throw UnsupportedError(
+					'DefaultFirebaseOptions have not been configured for linux - '
+					'you can reconfigure this by running the FlutterFire CLI again.',
+				);
+			default:
+				throw UnsupportedError(
+					'DefaultFirebaseOptions are not supported for this platform.',
+				);
+		}
+	}
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDR9k2OQWTP7rD_ODr1D1GMXmR0HWI0rqw',
-    appId: '1:125988402100:web:8b7fb3d3d20f40a923f8e1',
-    messagingSenderId: '125988402100',
-    projectId: 'fiery-keeper',
-    authDomain: 'fiery-keeper.firebaseapp.com',
-    storageBucket: 'fiery-keeper.firebasestorage.app',
-    measurementId: 'G-GZZSNQM9YV',
-  );
+	static const FirebaseOptions web = FirebaseOptions(
+		apiKey: 'AIzaSyDR9k2OQWTP7rD_ODr1D1GMXmR0HWI0rqw',
+		appId: '1:125988402100:web:8b7fb3d3d20f40a923f8e1',
+		messagingSenderId: '125988402100',
+		projectId: 'fiery-keeper',
+		authDomain: 'fiery-keeper.firebaseapp.com',
+		storageBucket: 'fiery-keeper.firebasestorage.app',
+		measurementId: 'G-GZZSNQM9YV',
+	);
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBqh2zUk7GDEXuwexNyJQGXuBYy38IWdx0',
-    appId: '1:125988402100:android:61cda7432ab8a7b223f8e1',
-    messagingSenderId: '125988402100',
-    projectId: 'fiery-keeper',
-    storageBucket: 'fiery-keeper.firebasestorage.app',
-  );
+	static const FirebaseOptions android = FirebaseOptions(
+		apiKey: 'AIzaSyBqh2zUk7GDEXuwexNyJQGXuBYy38IWdx0',
+		appId: '1:125988402100:android:61cda7432ab8a7b223f8e1',
+		messagingSenderId: '125988402100',
+		projectId: 'fiery-keeper',
+		storageBucket: 'fiery-keeper.firebasestorage.app',
+	);
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAiAHwH91L36n6JJ1MxIJpyiO6S9JTuW4c',
-    appId: '1:125988402100:ios:13872369e0f7437f23f8e1',
-    messagingSenderId: '125988402100',
-    projectId: 'fiery-keeper',
-    storageBucket: 'fiery-keeper.firebasestorage.app',
-    iosBundleId: 'com.example.fieryKeeper',
-  );
+	static const FirebaseOptions ios = FirebaseOptions(
+		apiKey: 'AIzaSyAiAHwH91L36n6JJ1MxIJpyiO6S9JTuW4c',
+		appId: '1:125988402100:ios:13872369e0f7437f23f8e1',
+		messagingSenderId: '125988402100',
+		projectId: 'fiery-keeper',
+		storageBucket: 'fiery-keeper.firebasestorage.app',
+		iosBundleId: 'com.example.fieryKeeper',
+	);
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAiAHwH91L36n6JJ1MxIJpyiO6S9JTuW4c',
-    appId: '1:125988402100:ios:13872369e0f7437f23f8e1',
-    messagingSenderId: '125988402100',
-    projectId: 'fiery-keeper',
-    storageBucket: 'fiery-keeper.firebasestorage.app',
-    iosBundleId: 'com.example.fieryKeeper',
-  );
+	static const FirebaseOptions macos = FirebaseOptions(
+		apiKey: 'AIzaSyAiAHwH91L36n6JJ1MxIJpyiO6S9JTuW4c',
+		appId: '1:125988402100:ios:13872369e0f7437f23f8e1',
+		messagingSenderId: '125988402100',
+		projectId: 'fiery-keeper',
+		storageBucket: 'fiery-keeper.firebasestorage.app',
+		iosBundleId: 'com.example.fieryKeeper',
+	);
 
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDR9k2OQWTP7rD_ODr1D1GMXmR0HWI0rqw',
-    appId: '1:125988402100:web:c3d97019a3ce5afc23f8e1',
-    messagingSenderId: '125988402100',
-    projectId: 'fiery-keeper',
-    authDomain: 'fiery-keeper.firebaseapp.com',
-    storageBucket: 'fiery-keeper.firebasestorage.app',
-    measurementId: 'G-LFLV3MSPVW',
-  );
+	static const FirebaseOptions windows = FirebaseOptions(
+		apiKey: 'AIzaSyDR9k2OQWTP7rD_ODr1D1GMXmR0HWI0rqw',
+		appId: '1:125988402100:web:c3d97019a3ce5afc23f8e1',
+		messagingSenderId: '125988402100',
+		projectId: 'fiery-keeper',
+		authDomain: 'fiery-keeper.firebaseapp.com',
+		storageBucket: 'fiery-keeper.firebasestorage.app',
+		measurementId: 'G-LFLV3MSPVW',
+	);
 }
