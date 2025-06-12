@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: 40),
                 // Botão que só é habilitado se o estado permitir
                 ElevatedButton(
-                  onPressed: currentState == 'NOT_FED'
+                  onPressed: currentState == 'NOT_FED' || currentState == 'EGG'
                       ? _feedPet
                       : null, // Desabilita se não puder alimentar
                   child: Text("Alimentar o Bichinho"),
