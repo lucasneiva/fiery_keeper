@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -150,7 +152,7 @@ class HomeScreen extends StatelessWidget {
         svgAssetPath = 'assets/egg.svg'; // Um padrão seguro
     }
     // Supondo que você use o pacote flutter_svg
-    // return SvgPicture.asset(svgAssetPath, height: 200);
-    return Text("IMAGEM: $svgAssetPath"); // Placeholder por enquanto
+    // return Text("IMAGEM: $svgAssetPath"); // Placeholder por enquanto
+    return SvgPicture.asset(svgAssetPath, height: 200);
   }
 }
